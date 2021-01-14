@@ -53,7 +53,7 @@ def define_args():
     parser.add_argument('--y_ref', type=float, default=20.0, help='the reference Y distance in meters from where lane association is determined')
     parser.add_argument('--prob_th', type=float, default=0.5, help='probability threshold for selecting output lanes')
     # General model settings
-    parser.add_argument('--batch_size', type=int, default=8, help='batch size')
+    parser.add_argument('--batch_size', type=int, default=2, help='batch size')
     parser.add_argument('--nepochs', type=int, default=30, help='total numbers of epochs')
     parser.add_argument('--learning_rate', type=float, default=5*1e-4, help='learning rate')
     parser.add_argument('--no_cuda', action='store_true', help='if gpu available')
